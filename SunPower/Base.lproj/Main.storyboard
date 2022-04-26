@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SunPower" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tip Koze" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YM-ed-ykO">
+                                <rect key="frame" x="44" y="77" width="89" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfx-1p-ppT">
+                                <rect key="frame" x="49" y="124" width="78" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Promeni">
+                                    <color key="baseBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="promeniButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nAy-UB-pXY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="121" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYC-x7-yKT">
+                                <rect key="frame" x="141.5" y="399" width="131" height="108"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Minut-a pre opekotina" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vd-YF-AFB">
+                                <rect key="frame" x="123" y="492" width="168" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvR-0Y-19z">
+                                <rect key="frame" x="152" y="521" width="110" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Podsetnik" titleAlignment="center">
+                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="podsetnikButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fZ4-CX-NN2"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ybw-iU-mMY">
+                                <rect key="frame" x="175" y="352" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.63706028078776777" green="0.96664996952149707" blue="0.97869015957446803" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Qfx-1p-ppT" firstAttribute="top" secondItem="8YM-ed-ykO" secondAttribute="bottom" constant="8" symbolic="YES" id="7ZD-PF-6X1"/>
+                            <constraint firstItem="Qfx-1p-ppT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="7bX-qp-9uG"/>
+                            <constraint firstItem="9vd-YF-AFB" firstAttribute="top" secondItem="MYC-x7-yKT" secondAttribute="bottom" constant="-10" id="9TI-IY-qJr"/>
+                            <constraint firstItem="ybw-iU-mMY" firstAttribute="centerY" secondItem="MYC-x7-yKT" secondAttribute="centerY" id="Atq-Ve-Toj"/>
+                            <constraint firstItem="xvR-0Y-19z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="Dev-Fb-dpu"/>
+                            <constraint firstItem="MYC-x7-yKT" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="GTm-oe-TyQ"/>
+                            <constraint firstItem="ybw-iU-mMY" firstAttribute="centerX" secondItem="MYC-x7-yKT" secondAttribute="centerX" id="Ls4-ro-bvZ"/>
+                            <constraint firstItem="MYC-x7-yKT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PAy-4T-I4M"/>
+                            <constraint firstItem="9vd-YF-AFB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="RdR-dR-g98"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9vd-YF-AFB" secondAttribute="trailing" constant="35" id="iGe-yG-FaH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xvR-0Y-19z" secondAttribute="trailing" constant="55" id="ngB-Nf-uCV"/>
+                            <constraint firstItem="8YM-ed-ykO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="sKL-5I-oN7"/>
+                            <constraint firstItem="xvR-0Y-19z" firstAttribute="top" secondItem="MYC-x7-yKT" secondAttribute="bottom" constant="19" id="sTL-WR-kVa"/>
+                            <constraint firstItem="8YM-ed-ykO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="skI-rb-pDv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ybw-iU-mMY" id="82x-vj-ZOB"/>
+                        <outlet property="minutiLabel" destination="MYC-x7-yKT" id="ToL-tF-2Ty"/>
+                        <outlet property="tipKozeLabel" destination="8YM-ed-ykO" id="s4p-iS-vaP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.6376811594203" y="46.875"/>
+        </scene>
+    </scenes>
+</document>
